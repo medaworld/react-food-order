@@ -10,7 +10,7 @@ const AvailableMeals = () => {
 
   useEffect(() => {
     const fetchMeals = async () => {
-      const response = await fetch(process.env.REACT_APP_API);
+      const response = await fetch(process.env.REACT_APP_API + 'meals.json');
 
       if (!response.ok) {
         throw new Error('Something went wrong!');
